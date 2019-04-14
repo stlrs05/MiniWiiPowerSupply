@@ -1,4 +1,336 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5CB2799C
+P 1800 1500
+F 0 "R?" H 1870 1546 50  0000 L CNN
+F 1 "R" H 1870 1455 50  0000 L CNN
+F 2 "" V 1730 1500 50  0001 C CNN
+F 3 "~" H 1800 1500 50  0001 C CNN
+	1    1800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB27A88
+P 1800 1900
+F 0 "R?" H 1870 1946 50  0000 L CNN
+F 1 "R" H 1870 1855 50  0000 L CNN
+F 2 "" V 1730 1900 50  0001 C CNN
+F 3 "~" H 1800 1900 50  0001 C CNN
+	1    1800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB27AC8
+P 1500 1500
+F 0 "R?" H 1570 1546 50  0000 L CNN
+F 1 "R" H 1570 1455 50  0000 L CNN
+F 2 "" V 1430 1500 50  0001 C CNN
+F 3 "~" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB27B0A
+P 3400 1050
+F 0 "R?" H 3470 1096 50  0000 L CNN
+F 1 "R" H 3470 1005 50  0000 L CNN
+F 2 "" V 3330 1050 50  0001 C CNN
+F 3 "~" H 3400 1050 50  0001 C CNN
+	1    3400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB27B82
+P 2850 1600
+F 0 "R?" V 2643 1600 50  0000 C CNN
+F 1 "R" V 2734 1600 50  0000 C CNN
+F 2 "" V 2780 1600 50  0001 C CNN
+F 3 "~" H 2850 1600 50  0001 C CNN
+	1    2850 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:MCP601-xOT U?
+U 1 1 5CB288AF
+P 2350 1600
+F 0 "U?" H 2400 1750 50  0000 L CNN
+F 1 "MCP6L01RT-EOT" H 2400 1800 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2250 1400 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22140b.pdf" H 2350 1800 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5CB290A1
+P 3300 1600
+F 0 "Q?" H 3200 1750 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3505 1555 50  0001 L CNN
+F 2 "" H 3500 1700 50  0001 C CNN
+F 3 "~" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1200 3400 1300
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB291C2
+P 2250 1250
+F 0 "#PWR?" H 2250 1100 50  0001 C CNN
+F 1 "+5V" H 2265 1423 50  0000 C CNN
+F 2 "" H 2250 1250 50  0001 C CNN
+F 3 "" H 2250 1250 50  0001 C CNN
+	1    2250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1300 2250 1250
+Wire Wire Line
+	2050 1500 2000 1500
+Wire Wire Line
+	2000 1500 2000 1000
+Wire Wire Line
+	2000 1000 2450 1000
+Wire Wire Line
+	2450 1000 2450 1300
+Connection ~ 3400 1300
+Wire Wire Line
+	3400 1300 3400 1400
+Wire Wire Line
+	2050 1700 1800 1700
+Wire Wire Line
+	1800 1700 1800 1650
+Wire Wire Line
+	1800 1750 1800 1700
+Connection ~ 1800 1700
+Wire Wire Line
+	1800 1700 1500 1700
+Wire Wire Line
+	1500 1700 1500 1650
+Wire Wire Line
+	2650 1600 2700 1600
+Wire Wire Line
+	2450 1300 3400 1300
+Wire Wire Line
+	3000 1600 3050 1600
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CB29A8B
+P 3200 1950
+F 0 "#PWR?" H 3200 1800 50  0001 C CNN
+F 1 "+BATT" H 3215 2123 50  0000 C CNN
+F 2 "" H 3200 1950 50  0001 C CNN
+F 3 "" H 3200 1950 50  0001 C CNN
+	1    3200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1800 3400 2000
+Wire Wire Line
+	3400 2000 3200 2000
+Wire Wire Line
+	3200 2000 3200 1950
+Wire Wire Line
+	3400 900  3400 850 
+Wire Wire Line
+	3400 850  3750 850 
+Wire Wire Line
+	3750 2000 3400 2000
+Connection ~ 3400 2000
+$Comp
+L power:+8V #PWR?
+U 1 1 5CB2AEC0
+P 3750 800
+F 0 "#PWR?" H 3750 650 50  0001 C CNN
+F 1 "+8V" H 3765 973 50  0000 C CNN
+F 2 "" H 3750 800 50  0001 C CNN
+F 3 "" H 3750 800 50  0001 C CNN
+	1    3750 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 850  3750 800 
+$Comp
+L power:GND #PWR?
+U 1 1 5CB2B206
+P 1800 2150
+F 0 "#PWR?" H 1800 1900 50  0001 C CNN
+F 1 "GND" H 1805 1977 50  0000 C CNN
+F 2 "" H 1800 2150 50  0001 C CNN
+F 3 "" H 1800 2150 50  0001 C CNN
+	1    1800 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 1850 0    50   Input ~ 0
+Charge_CC_On
+Wire Wire Line
+	3050 1600 3050 1850
+Wire Wire Line
+	3050 1850 3000 1850
+Connection ~ 3050 1600
+Wire Wire Line
+	3050 1600 3100 1600
+Wire Wire Line
+	1800 2050 1800 2100
+Wire Wire Line
+	1800 2100 2250 2100
+Wire Wire Line
+	2250 2100 2250 1900
+Connection ~ 1800 2100
+Wire Wire Line
+	1800 2100 1800 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB2F87A
+P 1800 1300
+F 0 "#PWR?" H 1800 1150 50  0001 C CNN
+F 1 "+5V" H 1815 1473 50  0000 C CNN
+F 2 "" H 1800 1300 50  0001 C CNN
+F 3 "" H 1800 1300 50  0001 C CNN
+	1    1800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1350 1800 1300
+Text GLabel 1450 1100 0    50   Input ~ 0
+Charge_LC_On
+Wire Wire Line
+	3750 2000 3750 1800
+$Comp
+L Device:Q_NPN_BEC Q?
+U 1 1 5CB31F1F
+P 3850 1600
+F 0 "Q?" H 3700 1750 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 4041 1555 50  0001 L CNN
+F 2 "" H 4050 1700 50  0001 C CNN
+F 3 "~" H 3850 1600 50  0001 C CNN
+	1    3850 1600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4150 1600 2    50   Input ~ 0
+Charge_CV_On
+Wire Wire Line
+	4150 1600 4050 1600
+$Comp
+L Device:R R?
+U 1 1 5CB3552D
+P 3750 1050
+F 0 "R?" H 3820 1096 50  0000 L CNN
+F 1 "R" H 3820 1005 50  0000 L CNN
+F 2 "" V 3680 1050 50  0001 C CNN
+F 3 "~" H 3750 1050 50  0001 C CNN
+	1    3750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 900  3750 850 
+Connection ~ 3750 850 
+Wire Wire Line
+	3750 1200 3750 1300
+Text GLabel 3000 2000 0    50   Input ~ 0
+Charge_Voltage
+Wire Wire Line
+	3050 1850 3050 2000
+Wire Wire Line
+	3050 2000 3000 2000
+Connection ~ 3050 1850
+Text GLabel 4250 1050 2    50   Input ~ 0
+Charge_Current
+Wire Wire Line
+	3800 1300 3750 1300
+Connection ~ 3750 1300
+Wire Wire Line
+	3750 1300 3750 1400
+$Comp
+L Device:R R?
+U 1 1 5CB37E6C
+P 3950 1300
+F 0 "R?" V 4050 1250 50  0000 L CNN
+F 1 "R" V 3950 1300 50  0000 L CNN
+F 2 "" V 3880 1300 50  0001 C CNN
+F 3 "~" H 3950 1300 50  0001 C CNN
+	1    3950 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB37F06
+P 4350 1300
+F 0 "R?" V 4450 1250 50  0000 L CNN
+F 1 "R" V 4350 1300 50  0000 L CNN
+F 2 "" V 4280 1300 50  0001 C CNN
+F 3 "~" H 4350 1300 50  0001 C CNN
+	1    4350 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB39F0B
+P 4550 1350
+F 0 "#PWR?" H 4550 1100 50  0001 C CNN
+F 1 "GND" H 4555 1177 50  0000 C CNN
+F 2 "" H 4550 1350 50  0001 C CNN
+F 3 "" H 4550 1350 50  0001 C CNN
+	1    4550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1300 4550 1300
+Wire Wire Line
+	4550 1300 4550 1350
+Wire Wire Line
+	4100 1300 4150 1300
+Wire Wire Line
+	4250 1050 4150 1050
+Wire Wire Line
+	4150 1050 4150 1300
+Connection ~ 4150 1300
+Wire Wire Line
+	4150 1300 4200 1300
+$Comp
+L Device:R R?
+U 1 1 5CB3D06C
+P 1200 1500
+F 0 "R?" H 1270 1546 50  0000 L CNN
+F 1 "R" H 1270 1455 50  0000 L CNN
+F 2 "" V 1130 1500 50  0001 C CNN
+F 3 "~" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1700 1200 1700
+Wire Wire Line
+	1200 1700 1200 1650
+Connection ~ 1500 1700
+Text GLabel 1150 1250 0    50   Input ~ 0
+Charge_TR_On
+Wire Wire Line
+	1150 1250 1200 1250
+Wire Wire Line
+	1200 1250 1200 1350
+Wire Wire Line
+	1450 1100 1500 1100
+Wire Wire Line
+	1500 1100 1500 1350
 $EndSCHEMATC
